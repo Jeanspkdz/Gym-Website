@@ -1,6 +1,6 @@
 :root {
   --header-height: 3.5rem;
-  
+
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(79, 72%, 55%);
@@ -16,17 +16,17 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Red Hat Display', sans-serif;
-  --second-font: 'Kaushan Script', cursive;
+  --body-font: "Red Hat Display", sans-serif;
+  --second-font: "Kaushan Script", cursive;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.5rem;
   --big-font-size: 1.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-bold: 700;
@@ -44,7 +44,6 @@
   padding: 0;
   margin: 0;
 }
-
 
 html {
   box-sizing: inherit;
@@ -72,11 +71,9 @@ h6 {
   text-wrap: balance;
 }
 
-
 ul {
   list-style: none;
 }
-
 
 body,
 button,
@@ -90,7 +87,9 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
@@ -98,9 +97,10 @@ h1, h2, h3 {
 /* Reusable classes */
 .container {
   margin: 0 auto;
-  width: min(1024px, 90%);
+  width: min(1280px, 90%);
 }
 
 .section {
   padding: 4.5rem 0 2rem;
+ 
 }
