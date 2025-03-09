@@ -12,8 +12,8 @@ export const Header = () => {
   }
 
   return (
-    <header className="header container">
-      <nav className="nav">
+    <header className="header">
+      <nav className="nav container">
         <a href="#" className="nav__logo">
           <img src={`${headerLogo}`} alt="Gym Logo" className="nav__logo-img" />
           <span>Academia</span>
@@ -49,7 +49,7 @@ export const Header = () => {
             </li>
 
             <li>
-              <button className="nav__btn nav__btn--register">
+              <button className="button button--secondary">
                 Register Now
               </button>
             </li>

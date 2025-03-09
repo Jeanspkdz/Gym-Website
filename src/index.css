@@ -28,6 +28,19 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
+  /* Responsive typography */
+  @media (width >= 64rem) {
+    --biggest-font-size: 6rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+
   /*========== Font weight ==========*/
   --font-bold: 700;
   --font-black: 900;
@@ -102,5 +115,53 @@ h3 {
 
 .section {
   padding: 4.5rem 0 2rem;
- 
+
+  @media (width >= 64rem) {
+    padding: 7rem 0 0;
+  }
+}
+
+.button {
+  cursor: pointer;
+  padding: 18px 32px;
+  height: auto;
+  transition: background 0.3s ease-out;
+  font-weight: var(--font-bold);
+  border: 2px solid transparent;
+}
+
+.button--primary {
+  background: var(--first-color);
+  border: 2px solid var(--first-color-light);
+  color: var(--title-color-black);
+
+  &:hover {
+    background: var(--first-color-alt);
+  }
+}
+
+.button--secondary {
+  background: var(--title-color);
+  color: var(--title-color-black);
+
+  &:hover {
+    border: 2px solid var(--first-color-light);
+    background: var(--first-color);
+  }
+}
+
+.button--with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  & svg {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(3px);
+    }
+  }
 }

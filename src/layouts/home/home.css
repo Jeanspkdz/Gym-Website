@@ -1,0 +1,146 @@
+.home {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  justify-items: center;
+  padding-top: 5rem;
+
+  @media (width >= 48rem) {
+    align-items: initial;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: unset;
+  }
+
+  @media (width >= 80rem) {
+    grid-template-columns: repeat(2, max-content);
+    /* position: relative; */
+    column-gap: 1.5rem;
+  }
+}
+
+.home__data {
+  z-index: 2;
+  text-align: center;
+  justify-self: center;
+
+  @media (width >= 48rem) {
+    text-align: initial;
+  }
+}
+
+.home__subtitle,
+.home__title {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-black);
+  margin-block: 0.5rem;
+
+  @media (width >= 48rem) {
+    margin: 0.75rem 0px 1.25rem;
+  }
+}
+
+.home__subtitle {
+  font-size: var(--bigger-font-size);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--title-color);
+}
+
+.home__description {
+  max-width: 65ch;
+  margin-bottom: 2rem;
+}
+
+.home__btn {
+  margin: 0 auto;
+}
+
+.home__images {
+  display: flex;
+  z-index: 1;
+
+  @media (width >= 48rem) {
+    justify-self: end;
+  }
+
+  @media (width >= 80rem) {
+    transform: translateX(-8rem);
+  }
+}
+
+.home__image {
+  width: 350px;
+  z-index: 1;
+
+  @media (width >= 64rem) {
+    width: 550px;
+  }
+
+  @media (width >= 80rem) {
+    width: 700px;
+    transform: translateX(2rem);
+  }
+}
+
+.home__triangle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 40%;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+
+  @media (width >= 40rem) {
+    height: 60%;
+  }
+
+  @media (width >= 64rem) {
+    height: 995px;
+  }
+}
+
+.home__triangle--1 {
+  background-color: var(--first-color-dark);
+  width: 90%;
+
+  @media (width >= 40rem) {
+    width: 50%;
+  }
+
+  @media (width >= 80rem) {
+    width: 100%;
+  }
+}
+.home__triangle--2 {
+  background-color: var(--first-color-alt);
+  width: 60%;
+
+  @media (width >= 40rem) {
+    width: 34%;
+  }
+
+  @media (width >= 80rem) {
+    width: 66%;
+  }
+}
+.home__triangle--3 {
+  background-color: var(--first-color);
+  width: 30%;
+
+  @media (width >= 40rem) {
+    width: 17%;
+  }
+
+  @media (width >= 80rem) {
+    width: 33%;
+  }
+}
