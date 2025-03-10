@@ -1,0 +1,21 @@
+.heading{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.8rem;
+}
+
+.heading__subtitle {
+  font-family: var(--second-font);;
+  color: var(--first-color);
+  transform: rotate(-2deg);
+  letter-spacing: 1.5px;
+}
+
+.heading__title {
+  text-transform: uppercase;
+
+  :first-child {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--title-color);
+  }
+}

@@ -3,6 +3,7 @@ import "@fontsource/kaushan-script";
 import { Header } from "./layouts/header/header";
 import { Home } from "./layouts/home/home";
 import { Logos } from "./layouts/logo/logos";
+import { Programs } from "./layouts/programs/programs";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <main>
         <Home/>
         <Logos/>
-        
+        <Programs/>
       </main>
       {/* <Main/> */}
     </>

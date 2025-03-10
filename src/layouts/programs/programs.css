@@ -1,0 +1,29 @@
+.programs {
+
+}
+
+.programs__container{
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+}
+
+.programs__heading{
+  text-align: center;
+}
+
+.programs__cards{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 225px;
+  gap: 2rem;
+
+  @media (width >= 40rem)  {
+    grid-template-columns: repeat(2, 225px);
+  }
+
+  @media (width >= 80rem)  {
+    grid-template-columns: repeat(4, 235px);
+    justify-content: center;
+  }
+}
