@@ -1,0 +1,18 @@
+.metric {
+  font-size: var(--h1-font-size);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.metric__number {
+  line-height: 1;
+  font-family: var(--second-font);
+  color: var(--title-color);
+}
+
+.metric__label {
+  line-height: 1;
+  font-size: var(--small-font-size);
+}

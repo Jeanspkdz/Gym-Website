@@ -38,9 +38,9 @@ export const Programs = () => {
     <section className="programs section">
       <div className="programs__container container">
         <div className="programs__heading">
-        <Heading subtitle="Our Program">
-          <span>Build your</span> <span>Best Body</span>
-        </Heading>
+          <Heading subtitle="Our Program">
+            <span>Build your</span> <span>Best Body</span>
+          </Heading>
         </div>
 
         <div className="programs__cards">

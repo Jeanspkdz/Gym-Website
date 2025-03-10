@@ -61,5 +61,6 @@
   color: var(--title-color-black);
   opacity: 0;
   transition: opacity .4s;
+  cursor: pointer;
 
 }

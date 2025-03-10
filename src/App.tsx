@@ -4,6 +4,7 @@ import { Header } from "./layouts/header/header";
 import { Home } from "./layouts/home/home";
 import { Logos } from "./layouts/logo/logos";
 import { Programs } from "./layouts/programs/programs";
+import { Choose } from "./layouts/choose/choose";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Home/>
         <Logos/>
         <Programs/>
+        <Choose/>
       </main>
       {/* <Main/> */}
     </>
