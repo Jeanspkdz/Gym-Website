@@ -5,6 +5,7 @@ import { Home } from "./layouts/home/home";
 import { Logos } from "./layouts/logo/logos";
 import { Programs } from "./layouts/programs/programs";
 import { Choose } from "./layouts/choose/choose";
+import { Pricing } from "./layouts/pricing/pricing";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Logos/>
         <Programs/>
         <Choose/>
+        <Pricing/>
       </main>
       {/* <Main/> */}
     </>
