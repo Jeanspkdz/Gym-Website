@@ -56,8 +56,6 @@ export const FormBMI = () => {
     });
   };
 
-  console.log(bmiData);
-
   return (
     <form className="form-bmi">
       <fieldset className="form-bmi__fieldset">

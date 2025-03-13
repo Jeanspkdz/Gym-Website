@@ -7,6 +7,7 @@ import { Programs } from "./layouts/programs/programs";
 import { Choose } from "./layouts/choose/choose";
 import { Pricing } from "./layouts/pricing/pricing";
 import { CalculateBMI } from "./layouts/calculate/calculateBMI";
+import { Footer } from "./layouts/footer/footer";
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         <Pricing/>
         <CalculateBMI/>
       </main>
-      {/* <Main/> */}
+      <Footer/>
     </>
   );
 }
