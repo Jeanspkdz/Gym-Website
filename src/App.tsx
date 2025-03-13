@@ -6,6 +6,7 @@ import { Logos } from "./layouts/logo/logos";
 import { Programs } from "./layouts/programs/programs";
 import { Choose } from "./layouts/choose/choose";
 import { Pricing } from "./layouts/pricing/pricing";
+import { CalculateBMI } from "./layouts/calculate/calculateBMI";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Programs/>
         <Choose/>
         <Pricing/>
+        <CalculateBMI/>
       </main>
       {/* <Main/> */}
     </>

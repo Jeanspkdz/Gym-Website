@@ -1,0 +1,53 @@
+.form-bmi {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-bmi__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border: 0;
+}
+
+.form-bmi__box{
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--first-color-light);
+  background: transparent;
+}
+
+.form-bmi__input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: inherit;
+  padding: 20px 0 20px 24px;
+  outline: none;
+  color: white;
+
+}
+
+.form-bmi__label {
+  padding-inline: 1.5rem;
+  color: white;
+}
+
+.form-bmi__message {
+
+}
+
+.form-bmi__message--healthy {
+  color: hsl(145, 60%, 35%);
+}
+
+.form-bmi__message--attention {
+  color: hsl(35, 85%, 40%); 
+}
+
+.form-bmi__message--critical,
+.form-bmi__message--incomplete {
+  color: hsl(0, 70%, 40%);
+}

@@ -54,11 +54,6 @@ export const PricingCard = ({
 
       <ul className="pricing-card__features">
         {AVAILABLE_FEATURES.map((feature, index) => {
-            console.log("INDEX" ,index );
-            console.log("features" ,featuresAvailable );
-            console.log(index + 1 <= featuresAvailable );
-            
-
           return (
             <li
               key={index}
