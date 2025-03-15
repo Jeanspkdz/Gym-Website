@@ -8,7 +8,7 @@ import { Choose } from "./layouts/choose/choose";
 import { Pricing } from "./layouts/pricing/pricing";
 import { CalculateBMI } from "./layouts/calculate/calculateBMI";
 import { Footer } from "./layouts/footer/footer";
-
+import { ScrollTopButton } from "./components/scrollTopButtom/scroll-top-button";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <CalculateBMI/>
       </main>
       <Footer/>
+      <ScrollTopButton/>
     </>
   );
 }

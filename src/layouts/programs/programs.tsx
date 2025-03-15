@@ -35,7 +35,7 @@ const programs: ProgramProps[] = [
 
 export const Programs = () => {
   return (
-    <section className="programs section">
+    <section className="programs section" id="program">
       <div className="programs__container container">
         <div className="programs__heading">
           <Heading subtitle="Our Program">

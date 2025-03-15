@@ -111,3 +111,8 @@
   width: 13%;
   background-color: var(--first-color-dark);
 }
+
+#choose {
+  view-timeline-name: --choose-section ; 
+  view-timeline-axis: block;
+}

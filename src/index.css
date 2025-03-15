@@ -48,6 +48,9 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  timeline-scope: --home-section, --program-section, --choose-section,
+    --pricing-section;
 }
 
 *,
@@ -60,6 +63,8 @@
 
 html {
   box-sizing: inherit;
+  scroll-behavior: smooth;
+  scrollbar-color: hsl(79, 4%, 25%) hsl(79, 4%, 15%); ;
 }
 
 img {

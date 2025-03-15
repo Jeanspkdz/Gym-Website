@@ -1,0 +1,26 @@
+.scroll-top-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  transform: translateY(300px);
+  background-color: var(--first-color);
+  display: inline-flex;
+  padding: 0.35rem;
+  color: var(--title-color-black);
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip)  ;
+  transition: 0.3s;
+  animation: show-up auto ease forwards;
+  animation-timeline: scroll();
+  animation-range: entry 10% entry 15%;
+
+  @media (width >= 40rem ) {
+    right: 32px;
+  }
+}
+
+@keyframes show-up {
+  to {
+    transform: translateY(0);
+  }
+}

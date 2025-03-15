@@ -19,7 +19,6 @@
 
   @media (width >= 80rem) {
     grid-template-columns: repeat(2, max-content);
-    /* position: relative; */
     column-gap: 1.5rem;
   }
 }
@@ -81,6 +80,7 @@
 .home__image {
   width: 350px;
   z-index: 1;
+  aspect-ratio: 35/ 30;
 
   @media (width >= 64rem) {
     width: 550px;
@@ -143,4 +143,10 @@
   @media (width >= 80rem) {
     width: 33%;
   }
+}
+
+
+#home {
+  view-timeline-name: --home-section ; 
+  view-timeline-axis: block;
 }

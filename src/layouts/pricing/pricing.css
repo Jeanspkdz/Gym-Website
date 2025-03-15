@@ -22,3 +22,8 @@
     grid-template-columns: repeat(auto-fit, 320px);
   }
 }
+
+#pricing {
+  view-timeline-name: --pricing-section ; 
+  view-timeline-axis: block;
+}

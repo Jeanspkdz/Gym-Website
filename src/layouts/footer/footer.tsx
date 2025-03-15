@@ -1,10 +1,22 @@
+import { motion } from "motion/react";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter } from "react-icons/io";
 import footerLogo from "@/assets/img/logo-nav.png";
 import { InputField } from "@/components/input-field/input-field";
-import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter } from "react-icons/io";
-
 import "./footer.css";
+import { AnimationVariants } from "@/types";
 
 export const Footer = () => {
+  const variants: AnimationVariants = {
+    show: {
+      y: 0,
+      opacity: 1,
+    },
+    hidden: {
+      y: -100,
+      opacity: 0,
+    },
+  };
+
   return (
     <footer className="footer section">
       <div className="footer__container container">
@@ -32,7 +44,12 @@ export const Footer = () => {
           </form>
         </div>
 
-        <div className="footer__links">
+        <motion.div
+          className="footer__links"
+          variants={variants}
+          initial="hidden"
+          whileInView={"show"}
+        >
           <div className="footer__box">
             <h3 className="footer__title">Services</h3>
             <ul className="footer__list">
@@ -106,10 +123,15 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="footer__group container">
+      <motion.div
+        className="footer__group container"
+        variants={variants}
+        initial="hidden"
+        whileInView={"show"}
+      >
         <p className="footer__copyright">
           {" "}
           &copy; Copyright Jeanspkdz. All rights reserved
@@ -128,7 +150,7 @@ export const Footer = () => {
             <IoLogoInstagram size={20} />
           </a>
         </ul>
-      </div>
+      </motion.div>
     </footer>
   );
 };

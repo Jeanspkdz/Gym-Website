@@ -82,7 +82,7 @@
   gap: 2rem;
   justify-content: space-between;
 
-  @media (width >=48rem) {
+  @media (width >=64rem) {
     margin-top: 7rem;
     flex-direction: row;
   }

@@ -25,25 +25,25 @@ export const Header = () => {
         >
           <ul className="nav__list">
             <li>
-              <a href="#" className="nav__link">
+              <a href="#home" className="nav__link" id="home-link">
                 Home
               </a>
             </li>
 
             <li>
-              <a href="#" className="nav__link">
+              <a href="#program" className="nav__link" id="program-link">
                 Program
               </a>
             </li>
 
             <li>
-              <a href="#" className="nav__link">
+              <a href="#choose" className="nav__link" id="choose-link">
                 Choose Us
               </a>
             </li>
 
             <li>
-              <a href="#" className="nav__link">
+              <a href="#pricing" className="nav__link" id="pricing-link">
                 Pricing
               </a>
             </li>
