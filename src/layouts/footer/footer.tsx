@@ -49,6 +49,9 @@ export const Footer = () => {
           variants={variants}
           initial="hidden"
           whileInView={"show"}
+          viewport={
+            {once: true}
+          }
         >
           <div className="footer__box">
             <h3 className="footer__title">Services</h3>
@@ -131,6 +134,9 @@ export const Footer = () => {
         variants={variants}
         initial="hidden"
         whileInView={"show"}
+        viewport={
+          {once: true}
+        }
       >
         <p className="footer__copyright">
           {" "}
